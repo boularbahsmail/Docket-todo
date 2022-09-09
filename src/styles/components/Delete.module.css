@@ -1,0 +1,31 @@
+.deleteItem{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap:.5rem;
+    position: absolute;
+    right:1.5rem;
+    z-index:15;
+    background: var(--gray-99);
+    padding:.6rem .8rem;
+    border-radius:4px;
+}
+.deleteItem p{
+    font-size:.9rem;
+    color: var(--gray-40);
+}
+.deleteItem button{
+    border-radius:3px;
+    font-size:.75rem;
+    border: none;
+    padding:.35rem .45rem;
+    cursor: pointer;
+}
+.deleteItemAction{
+    background: var(--accent-red-50);
+    color: var(--gray-97);
+}
+.cancelAction{
+    background: var(--gray-95);
+    color: var(--gray-70);
+}

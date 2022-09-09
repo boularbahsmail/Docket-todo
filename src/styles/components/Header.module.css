@@ -1,0 +1,69 @@
+.head{
+    width: 100%;
+    height:168px;
+    background-image: 
+        url('https://ik.imagekit.io/lrjseyuxi3m/todoapp/header-bg-mountain-min_ZCo6NEYQT_KJ.png?updatedAt=1636031124370'),
+        linear-gradient(to right, #0F9186, #2BD76C);
+    padding: 5px 10px;
+    
+}
+.headContent,
+.logoAndProject,
+.currentProject{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    position: absolute;
+    width: calc(100% + 1rem);
+    padding:.5rem 0;
+    background: rgba(0,0,0,.05);
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    transform: translateX(-1rem)
+}
+.headContent{
+    justify-content: space-between;
+    padding:4rem 0;
+}
+.logoAndProject{
+    flex-direction: row;
+    gap:1.2rem;
+}
+.currentProject{
+    padding:.5rem;
+    border-radius:4px;
+    background: rgba(0, 0, 0, 0.13);
+    backdrop-filter: blur(30px);
+    border: none;
+    color: var(--gray-95);
+    gap:2rem;
+    cursor: pointer;
+    transition: background  ease-in-out .3s;
+}
+.currentProject:hover{
+    background: rgba(0, 0, 0, 0.18);
+}
+.headToday{
+    color: var(--gray-98);
+    display: flex;
+    gap:var(--size-8);
+    text-align:right;
+}
+
+@media screen and (min-width:920px){
+    .headContent{
+        padding:2rem 0;
+    }
+    .headToday{
+        text-align:left;
+    }
+    .logo{
+        position:static;
+        background:none;
+        transform: translateX(0);
+        width:auto;
+    }
+}

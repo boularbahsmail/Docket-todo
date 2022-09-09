@@ -1,0 +1,52 @@
+.taskItem{
+    padding:1.25rem 2rem;
+    border-bottom:1px solid var(--gray-95);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:.85rem;
+    color: var(--gray-20);
+    position: relative;
+    margin-top: 10px;
+}
+.taskItem:hover{
+    background: var(--gray-99);
+}
+.taskItem:hover .taskDeleteButton{
+    display: block;
+}
+.taskCheckButton{
+    min-width: 18px;
+    min-height: 18px;
+    border-radius:18px;
+    background: #fff;
+    border:1px solid #2BD76C;
+    cursor: pointer;
+}
+.taskItem p{
+    font-size:1.15rem;
+    line-height: 1.75rem;
+}
+.taskDeleteButton{
+    border:none;
+    border-radius:32px;
+    position: absolute;
+    right: 1.5rem;
+    cursor: pointer;
+    opacity:.8;
+}
+.taskItemDone p{
+    opacity:.65;
+}
+.taskItemDone .taskCheckButton{
+    background:var(--primary-green-light);
+}
+
+@media screen and (min-width:920px){
+    .taskItem{
+        gap:1rem;
+    }
+    .taskDeleteButton{
+        display: none;
+    }
+}

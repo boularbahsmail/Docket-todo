@@ -1,0 +1,32 @@
+.notification{
+    padding:.8rem 1rem;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+    border-radius:6px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border:1px solid var(--gray-85);
+    position: fixed;
+    bottom:2rem;
+    left:50%;
+    transform: translateX(-50%) !important;
+}
+.notification p{
+    font-size: 1rem;
+    color: var(--gray-30);
+}
+.notification button{
+    background: var(--gray-98);
+    border-radius:4px;
+    padding:var(--size-8);
+    border:none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.notification button:hover{
+    background: var(--gray-95);
+}

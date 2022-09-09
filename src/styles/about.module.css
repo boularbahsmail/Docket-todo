@@ -1,0 +1,168 @@
+.mainContent{
+    background: #fff;
+    border-radius:7px;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.07);
+    padding:2rem;
+    margin-top: -70px;
+    margin-bottom: 10px;
+}
+
+.contentBlock,
+.contentRow{
+    display: flex;
+    align-items: center;
+}
+.contentBlock{
+    flex-direction: column;
+    gap:3rem;
+    margin:0 0 5rem;
+}
+
+.contentBlock{
+    margin-bottom: 20px;
+}
+
+.contentBlock img{
+    height: min-content;
+}
+.contentRow{
+    flex-direction: column;
+}
+.contentBlock .textBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.textBlock:nth-child(1) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max-content;
+    gap: 14px;
+}
+
+.textBlock:nth-child(1) ul li {
+    list-style-type: none;
+    font-size: 25px;
+    color: var(--primary-green-light);
+}
+
+.textBlock:nth-child(1) h3 {
+    color: var(--gray-30);
+}
+
+.contentRow h2,
+.contentBlock h2{
+    font-size: 1.75rem;
+    color: var(--gray-30);
+    width:100%;
+}
+.contentRow h2{
+    margin-bottom:1rem;
+}
+.contentBlock p,
+.textList li{
+    color: var(--gray-45);
+    line-height: 1.85rem;
+}
+.contentBlock p{
+    font-size:1.10rem;
+}
+.contentBlock b{
+    font-weight:normal;
+    color: var(--gray-25)
+}
+.textList li{
+    font-size:1.10rem;
+    list-style:none;
+}
+.contentBlock p a,
+.textList li a{
+    color: var(--accent-blue-50);
+}
+.textList li a{
+    margin-right:.5rem;
+}
+.textList li span{
+    font-size:1rem;
+}
+.contentBlock{
+    width: 100%;
+}
+.textList h3{
+    font-size:1.15rem;
+    color: var(--gray-40);
+    margin-bottom:.65rem;
+}
+
+.features{
+    display: flex;
+    flex-direction:column;
+    gap:2rem;
+    width:100%;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.featureCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    margin-bottom:2rem;
+    padding:1rem;
+}
+.featureCard p{
+    color:var(--gray-40);
+    font-size:1.15rem;
+}
+
+.profilePicture{
+    padding:0 2rem;
+}
+.socialLinks{
+    position: relative;
+    display: flex;
+}
+.socialItem{
+    position: absolute;
+    transform: scale(105%);
+    transition: transform ease-in-out .2s;
+}
+.socialItem:hover{
+    transform: scale(140%);
+}
+.linkLinkedin{
+    left:132.14px;
+    top:60.36px;
+}
+.linkYoutube{
+    left:178.82px;
+    top:115.84px;
+}
+.linkGithub{
+    left:176.81px;
+    top:8.72px;
+}
+
+@media screen and (min-width: 920px){
+    .contentBlock{
+        flex-direction:row;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding:0;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .mainContent {
+        max-width: max-content;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -45px;
+    }
+}

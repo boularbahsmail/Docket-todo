@@ -1,0 +1,44 @@
+.projectItem{
+    width:100%;
+    border-bottom:1px solid var(--gray-95);
+    color: var(--gray-70);
+    font-size: 1.15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color .25s;
+    position: relative;
+}
+.projectItem:hover{
+    color:var(--gray-45);
+}
+.projectItem h3{
+    font-weight:500;
+    font-size: 1.165rem;
+    padding:1rem 1.5rem;
+    width:100%;
+    cursor: pointer;
+}
+.projectItem img{
+    padding:.5rem;
+    background: var(--gray-95);
+    border-radius:4px;
+    position: absolute;
+    right:1.5rem;
+    cursor: pointer;
+}
+
+.itemSelected{
+    color: #28CF6E;
+    background: #f4fff8;
+    opacity:1;
+    padding:.8rem 1rem;
+}
+.itemSelected h3{
+    background:var(--primary-green-light);
+    color:var(--gray-99);
+    padding:.35rem .65rem;
+    border-radius:2rem;
+    width: max-content;
+    cursor:default;
+}

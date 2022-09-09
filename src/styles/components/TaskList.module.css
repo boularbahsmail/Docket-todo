@@ -1,0 +1,11 @@
+.taskList{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+.taskList h3{
+    color: var(--gray-45);
+    padding: 1.5rem 2rem 0;
+    font-weight: 400;
+}
