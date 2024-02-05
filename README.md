@@ -1,6 +1,6 @@
 ## Todo App Next
 
-<a href="https://patrickrios-todo-app.vercel.app/">Check the live preview</a>
+<a href="https://docket-todo.vercel.app/">Check the live preview</a>
 
 First, install the dependencies, run
 
