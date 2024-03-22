@@ -44,13 +44,6 @@ const Author: NextPage = () => {
                       </a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="https://www.instagram.com/ismailboularbah">
-                      <a target="_blank" title="Instagram">
-                        <FiInstagram />
-                      </a>
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </section>
